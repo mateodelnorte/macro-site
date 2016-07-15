@@ -9,7 +9,7 @@
 		<!-- Custom Fonts -->
 		{{!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> --}}
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-		<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 		<link href="/styles/site.min.css" rel="stylesheet">
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor
@@ -31,7 +31,7 @@
 					Menu <i class="fa fa-bars"></i>
 					</button>
 					<a class="navbar-brand page-scroll" href="#page-top">
-						<i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap
+						<span class="light">Empire</span>Node
 					</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,11 +41,11 @@
 						<li class="hidden">
 							<a href="#page-top"></a>
 						</li>
-						{{# each navLinks}}
+						{{!-- {{# each navLinks}}
 						<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
 							<a href="{{ href }}">{{ label }}</a>
 						</li>
-						{{/each}}
+						{{/each}} --}}
 						<li>
 							<a class="page-scroll" href="#about">About</a>
 						</li>
@@ -55,11 +55,11 @@
 						<li>
 							<a class="page-scroll" href="#contact">Contact</a>
 						</li>
-						{{#if user}}
+						{{!-- {{#if user}}
 						<li><a href="/keystone/signout">Sign Out</a></li>
 						{{else}}
 						<li><a href="/keystone/signin">Sign In</a></li>
-						{{/if}}
+						{{/if}} --}}
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -68,13 +68,13 @@
 		</nav>
 		<!-- Intro Header -->
 		<header class="intro">
+			<div class="black-bg-cover"></div>
 			<div class="intro-body">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
-							<h1 class="brand-heading">Grayscale</h1>
-							<p class="intro-text">A free, responsive, one page Bootstrap theme.
-							<br>Created by Start Bootstrap.</p>
+							<h1 class="brand-heading"><span>Empire</span>Node</h1>
+							<p class="intro-text">NYC's largest community run Node.js conference</p>
 							<a href="#about" class="btn btn-circle page-scroll">
 								<i class="fa fa-angle-double-down animated"></i>
 							</a>
@@ -178,7 +178,7 @@
 	<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 	<!-- Theme JavaScript -->
-	<script src="/js/grayscale.min.js"></script>
+	<script src="/js/grayscale.js"></script>
 	{{{isAdminEditorJS user}}}
 </body>
 </html>
